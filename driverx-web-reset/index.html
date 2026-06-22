@@ -3,19 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DriverX: plataforma de movilidad con viajes en moto y carro, conductores verificados y soporte profesional." />
-  <title>DriverX | Movilidad rápida, segura y accesible</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <title>DriverX | Viajes rápidos, seguros y accesibles</title>
+  <meta name="description" content="DriverX es una plataforma de movilidad que conecta pasajeros con conductores verificados para viajes en moto y carro, con seguridad, tecnología y precios accesibles." />
+  <meta name="theme-color" content="#08080b" />
+
+  <meta property="og:title" content="DriverX | La nueva forma de moverte" />
+  <meta property="og:description" content="Viajes en moto y carro con conductores verificados, soporte y tecnología en tiempo real." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/08080b/ffffff&text=DriverX" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-bg"></div>
+  <div class="site-bg">
+    <div class="orb orb-red"></div>
+    <div class="orb orb-dark"></div>
+    <div class="grid-glow"></div>
+  </div>
 
-  <header class="navbar">
-    <a href="#inicio" class="brand" aria-label="DriverX Inicio">
-      <span>DRIVER</span><strong>X</strong>
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#inicio" aria-label="DriverX inicio">
+      <span class="brand-mark">DX</span>
+      <span>Driver<span>X</span></span>
     </a>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
@@ -24,288 +36,289 @@
 
     <nav class="nav-links" id="navLinks">
       <a href="#servicios">Servicios</a>
+      <a href="#pasajeros">Pasajeros</a>
       <a href="#conductores">Conductores</a>
       <a href="#seguridad">Seguridad</a>
       <a href="#tecnologia">Tecnología</a>
-      <a href="#soporte">Soporte</a>
-      <a class="nav-cta" href="#descargar">Muy pronto</a>
+      <a href="#contacto" class="nav-cta">Contactar</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
+    <section class="hero section" id="inicio">
       <div class="hero-content reveal">
-        <p class="eyebrow"><span></span> Plataforma de movilidad DriverX</p>
-        <h1>Muévete rápido, seguro y al mejor precio.</h1>
+        <p class="eyebrow">Movilidad moderna · Moto y carro · Muy pronto</p>
+        <h1>La nueva forma de moverte con <span>confianza</span>.</h1>
         <p class="hero-text">
-          DriverX conecta pasajeros con conductores verificados para viajes en moto y carro,
-          con tecnología en tiempo real, soporte profesional y una experiencia moderna.
+          DriverX conecta pasajeros con conductores verificados para viajes rápidos, seguros y accesibles. Una plataforma pensada para moverte mejor y crear nuevas oportunidades de ingreso.
         </p>
         <div class="hero-actions">
-          <a href="#descargar" class="btn btn-primary">Viajar pronto</a>
-          <a href="#conductores" class="btn btn-secondary">Quiero ser conductor</a>
+          <a href="#pasajeros" class="btn btn-primary">Quiero viajar</a>
+          <a href="#conductores" class="btn btn-secondary">Ser conductor</a>
         </div>
-        <div class="trust-row">
+        <div class="hero-trust">
           <div><strong>24/7</strong><span>Soporte</span></div>
-          <div><strong>GPS</strong><span>Seguimiento</span></div>
           <div><strong>100%</strong><span>Verificación manual</span></div>
+          <div><strong>2</strong><span>Moto y carro</span></div>
         </div>
       </div>
 
-      <div class="hero-visual reveal delay-1" aria-label="Mockup DriverX">
-        <div class="map-card">
-          <div class="route route-one"></div>
-          <div class="route route-two"></div>
-          <div class="pin user-pin"></div>
-          <div class="car car-a">🚗</div>
-          <div class="car car-b">🏍️</div>
-          <div class="floating-pill"><span></span> 12 conductores cerca</div>
-        </div>
-        <div class="phone-card">
-          <div class="phone-top"><span>8:36</span><span>●●●</span></div>
-          <h3>Hola, Tatiana 👋</h3>
-          <p>¿A dónde vas hoy?</p>
-          <div class="search-box">🔎 <div><b>¿A dónde vas?</b><small>Ingresa tu destino</small></div> <span>›</span></div>
-          <div class="ride-grid">
-            <div class="ride active"><small>-20%</small><b>🏍️ Moto</b><span>Desde $2.50</span></div>
-            <div class="ride"><b>🚗 Carro</b><span>Desde $4.50</span></div>
+      <div class="hero-visual reveal">
+        <div class="phone-mockup">
+          <div class="phone-top"></div>
+          <div class="phone-map">
+            <span class="route-line r1"></span>
+            <span class="route-line r2"></span>
+            <span class="pin p1">●</span>
+            <span class="pin p2">●</span>
+            <span class="driver-dot d1"></span>
+            <span class="driver-dot d2"></span>
+            <span class="driver-dot d3"></span>
           </div>
+          <div class="phone-card main-card">
+            <small>¿A dónde vas?</small>
+            <strong>Ingresa tu destino</strong>
+          </div>
+          <div class="ride-options">
+            <div class="ride-card active"><span>🏍️</span><b>Moto</b><small>Desde $2.50</small></div>
+            <div class="ride-card"><span>🚗</span><b>Carro</b><small>Desde $4.50</small></div>
+          </div>
+          <div class="phone-banner">12 conductores disponibles cerca</div>
         </div>
       </div>
     </section>
 
-    <section class="section compact" id="empresa">
+    <section class="section stats-section reveal" aria-label="Resumen DriverX">
+      <div class="stat-card"><span class="counter" data-target="5">0</span><small>ciudades objetivo</small></div>
+      <div class="stat-card"><span class="counter" data-target="100">0</span><small>conductores en proceso</small></div>
+      <div class="stat-card"><span class="counter" data-target="2">0</span><small>tipos de viaje</small></div>
+      <div class="stat-card"><span class="counter" data-target="24">0</span><small>soporte preparado</small></div>
+    </section>
+
+    <section class="section split" id="empresa">
       <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Nuestra compañía</p>
-        <h2>Una plataforma moderna para pasajeros y conductores.</h2>
-        <p>
-          DriverX nace para ofrecer una movilidad más accesible, segura y eficiente. Nuestro objetivo es conectar personas con conductores confiables usando tecnología simple, rápida y profesional.
-        </p>
+        <p class="eyebrow">Nuestra compañía</p>
+        <h2>DriverX nace para crear movilidad más humana, segura y accesible.</h2>
       </div>
-      <div class="stats-grid reveal delay-1">
-        <article><strong>2</strong><span>Opciones de viaje</span></article>
-        <article><strong>24/7</strong><span>Soporte preparado</span></article>
-        <article><strong>GPS</strong><span>Viajes en tiempo real</span></article>
-        <article><strong>Admin</strong><span>Control profesional</span></article>
+      <div class="mission-grid">
+        <article class="info-card reveal">
+          <span class="icon">🎯</span>
+          <h3>Misión</h3>
+          <p>Conectar pasajeros y conductores verificados mediante una plataforma rápida, clara y confiable.</p>
+        </article>
+        <article class="info-card reveal">
+          <span class="icon">🚀</span>
+          <h3>Visión</h3>
+          <p>Ser una plataforma regional de movilidad reconocida por seguridad, tecnología y oportunidad económica.</p>
+        </article>
+        <article class="info-card reveal">
+          <span class="icon">🤝</span>
+          <h3>Valores</h3>
+          <p>Confianza, respeto, transparencia, rapidez, innovación y protección para cada viaje.</p>
+        </article>
       </div>
     </section>
 
     <section class="section" id="servicios">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Servicios</p>
-        <h2>Elige cómo quieres moverte.</h2>
-        <p>DriverX ofrece dos tipos de viaje para adaptarse a cada necesidad: velocidad, ahorro, comodidad y seguridad.</p>
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Servicios</p>
+        <h2>Elige cómo quieres moverte</h2>
+        <p>DriverX ofrece opciones flexibles para diferentes necesidades de movilidad.</p>
       </div>
-      <div class="cards two-cols">
+      <div class="service-grid">
+        <article class="service-card featured reveal">
+          <div class="service-icon">🏍️</div>
+          <span class="badge">Rápido y económico</span>
+          <h3>DriverX Moto</h3>
+          <p>Ideal para viajes cortos, traslados rápidos y usuarios que buscan ahorrar tiempo y dinero.</p>
+          <a href="#pasajeros">Conocer más →</a>
+        </article>
         <article class="service-card reveal">
-          <div class="icon">🏍️</div>
-          <span class="badge">Más económico</span>
-          <h3>Moto</h3>
-          <p>Ideal para viajes cortos, traslados rápidos y usuarios que desean ahorrar tiempo y dinero.</p>
-          <a href="#descargar">Ver disponibilidad →</a>
-        </article>
-        <article class="service-card reveal delay-1">
-          <div class="icon">🚗</div>
-          <span class="badge dark">Más comodidad</span>
-          <h3>Carro</h3>
-          <p>Perfecto para viajes familiares, recorridos más largos o cuando necesitas mayor espacio y confort.</p>
-          <a href="#descargar">Conocer más →</a>
+          <div class="service-icon">🚗</div>
+          <span class="badge dark">Cómodo y seguro</span>
+          <h3>DriverX Carro</h3>
+          <p>Perfecto para viajes familiares, recorridos largos o cuando necesitas mayor comodidad.</p>
+          <a href="#pasajeros">Conocer más →</a>
         </article>
       </div>
     </section>
 
-    <section class="section split" id="pasajeros">
-      <div class="split-content reveal">
-        <p class="eyebrow"><span></span> Para pasajeros</p>
-        <h2>Solicita un viaje en pocos pasos.</h2>
-        <p>Desde tu teléfono podrás elegir destino, seleccionar Moto o Carro, ver conductores disponibles y consultar tu historial de viajes.</p>
-        <div class="steps">
-          <div><b>01</b><span>Ingresa tu destino</span></div>
-          <div><b>02</b><span>Elige Moto o Carro</span></div>
-          <div><b>03</b><span>Viaja con confianza</span></div>
-        </div>
-      </div>
-      <div class="glass-panel reveal delay-1">
-        <h3>Beneficios para pasajeros</h3>
+    <section class="section two-col" id="pasajeros">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Para pasajeros</p>
+        <h2>Viaja cuando lo necesites.</h2>
+        <p>Solicita un viaje desde tu teléfono, elige entre moto o carro, revisa conductores cercanos y consulta tu historial de viajes.</p>
         <ul class="check-list">
-          <li>Precios accesibles y opciones flexibles.</li>
-          <li>Conductores verificados por la plataforma.</li>
-          <li>Historial, rating y soporte.</li>
-          <li>Promociones y cashback preparado.</li>
+          <li>Opciones de viaje claras</li>
+          <li>Conductores cercanos</li>
+          <li>Historial y calificación</li>
+          <li>Promociones y cashback</li>
         </ul>
+        <a class="btn btn-primary" href="#app">Ver disponibilidad</a>
+      </div>
+      <div class="steps-card reveal">
+        <h3>Cómo funciona</h3>
+        <div class="step"><span>1</span><p><b>Ingresa tu destino</b><small>Busca hacia dónde quieres ir.</small></p></div>
+        <div class="step"><span>2</span><p><b>Elige Moto o Carro</b><small>Selecciona la opción que más se adapte a ti.</small></p></div>
+        <div class="step"><span>3</span><p><b>Viaja con confianza</b><small>Muévete con un conductor verificado.</small></p></div>
       </div>
     </section>
 
-    <section class="section split reverse" id="conductores">
-      <div class="glass-panel reveal">
-        <h3>Requisitos para conductores</h3>
-        <ul class="check-list">
-          <li>Documento de identidad vigente.</li>
-          <li>Licencia válida.</li>
-          <li>Foto de perfil clara.</li>
-          <li>Documentos del vehículo o moto.</li>
-          <li>Verificación manual antes de recibir viajes.</li>
-        </ul>
+    <section class="section two-col reverse" id="conductores">
+      <div class="steps-card reveal">
+        <h3>Registro de conductor</h3>
+        <div class="step"><span>1</span><p><b>Crea tu cuenta</b><small>Regístrate desde la app o formulario.</small></p></div>
+        <div class="step"><span>2</span><p><b>Sube tus documentos</b><small>Licencia, identidad y datos del vehículo.</small></p></div>
+        <div class="step"><span>3</span><p><b>Espera aprobación</b><small>DriverX revisa manualmente tu perfil.</small></p></div>
       </div>
-      <div class="split-content reveal delay-1">
-        <p class="eyebrow"><span></span> Para conductores</p>
+      <div class="section-copy reveal">
+        <p class="eyebrow">Para conductores</p>
         <h2>Gana dinero conduciendo con DriverX.</h2>
-        <p>Regístrate, sube tus documentos y empieza a recibir solicitudes cuando tu cuenta sea aprobada.</p>
-        <div class="steps">
-          <div><b>01</b><span>Regístrate</span></div>
-          <div><b>02</b><span>Sube documentos</span></div>
-          <div><b>03</b><span>Comienza a conducir</span></div>
-        </div>
-        <a href="#soporte" class="btn btn-primary small">Registrarme como conductor</a>
+        <p>Administra tu tiempo, recibe solicitudes y genera ingresos conectando con pasajeros que necesitan moverse de forma rápida y segura.</p>
+        <a class="btn btn-primary" href="#contacto">Quiero ser conductor</a>
       </div>
     </section>
 
-    <section class="section" id="seguridad">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Seguridad DriverX</p>
+    <section class="section" id="requisitos">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Requisitos</p>
+        <h2>Conductores aprobados antes de recibir viajes</h2>
+      </div>
+      <div class="requirements-grid">
+        <div class="mini-card reveal">🪪 <span>Documento de identidad válido</span></div>
+        <div class="mini-card reveal">🚘 <span>Registro del vehículo o moto</span></div>
+        <div class="mini-card reveal">📄 <span>Licencia de conducir vigente</span></div>
+        <div class="mini-card reveal">🛡️ <span>Seguro o documentos requeridos</span></div>
+        <div class="mini-card reveal">📸 <span>Foto de perfil clara</span></div>
+        <div class="mini-card reveal">✅ <span>Verificación manual DriverX</span></div>
+      </div>
+    </section>
+
+    <section class="section security" id="seguridad">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Seguridad DriverX</p>
         <h2>Tu seguridad es parte de cada viaje.</h2>
-        <p>La confianza es el centro de DriverX. Por eso combinamos verificación, tecnología y soporte para cuidar cada experiencia.</p>
+        <p>La plataforma está diseñada para brindar confianza antes, durante y después del viaje.</p>
       </div>
-      <div class="cards four-cols">
-        <article class="mini-card reveal"><div class="icon">🛡️</div><h3>Conductores verificados</h3><p>Revisión manual antes de activar cuentas.</p></article>
-        <article class="mini-card reveal delay-1"><div class="icon">📄</div><h3>Documentos revisados</h3><p>Validación de documentos de identidad y vehículo.</p></article>
-        <article class="mini-card reveal delay-2"><div class="icon">📍</div><h3>Seguimiento GPS</h3><p>Ubicación en tiempo real durante el viaje.</p></article>
-        <article class="mini-card reveal delay-3"><div class="icon">⭐</div><h3>Sistema de rating</h3><p>Calificación para pasajeros y conductores.</p></article>
+      <div class="security-grid">
+        <article class="info-card reveal"><span class="icon">🛡️</span><h3>Conductores verificados</h3><p>Revisión manual de documentos y estado de cuenta antes de conectarse.</p></article>
+        <article class="info-card reveal"><span class="icon">📍</span><h3>Seguimiento en tiempo real</h3><p>Ubicación y estado del viaje para una experiencia más controlada.</p></article>
+        <article class="info-card reveal"><span class="icon">⭐</span><h3>Calificaciones</h3><p>Sistema de rating para fortalecer la confianza entre usuario y conductor.</p></article>
+        <article class="info-card reveal"><span class="icon">🎧</span><h3>Soporte 24/7</h3><p>Canales preparados para atender consultas, reportes y asistencia.</p></article>
       </div>
     </section>
 
-    <section class="section split" id="tecnologia">
-      <div class="split-content reveal">
-        <p class="eyebrow"><span></span> Tecnología</p>
-        <h2>Una plataforma creada para operar con control.</h2>
-        <p>DriverX integra app de pasajero, app de conductor, backend API, panel administrativo, verificación manual, historial de viajes, wallet y tracking.</p>
+    <section class="section tech-section" id="tecnologia">
+      <div class="tech-panel reveal">
+        <div>
+          <p class="eyebrow">Tecnología</p>
+          <h2>Una plataforma conectada en tiempo real.</h2>
+          <p>DriverX integra app de pasajero, app de conductor, backend, panel administrativo, verificación manual, viajes, tracking GPS, historial, wallet y soporte.</p>
+        </div>
         <div class="tech-list">
-          <span>API Backend</span><span>Panel Admin</span><span>GPS</span><span>Socket tiempo real</span><span>Wallet</span><span>Verificación</span>
+          <span>GPS en tiempo real</span>
+          <span>Panel admin</span>
+          <span>Verificación manual</span>
+          <span>Historial de viajes</span>
+          <span>Wallet conductor</span>
+          <span>Soporte</span>
         </div>
       </div>
-      <div class="dashboard-preview reveal delay-1">
-        <div class="dash-row"><span>Usuarios registrados</span><b>12,458</b></div>
-        <div class="dash-row"><span>Conductores activos</span><b>2,341</b></div>
-        <div class="dash-row"><span>Viajes hoy</span><b>1,842</b></div>
-        <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="section" id="ciudades">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Disponibilidad</p>
+        <h2>Preparando nuestras primeras ciudades</h2>
+        <p>DriverX estará disponible inicialmente en ciudades seleccionadas mientras crece la red de conductores.</p>
+      </div>
+      <div class="city-grid">
+        <span>Managua</span><span>Masaya</span><span>Granada</span><span>León</span><span>Chinandega</span><span>Próximamente más</span>
       </div>
     </section>
 
-    <section class="section" id="disponibilidad">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Lanzamiento</p>
-        <h2>Disponible próximamente en ciudades seleccionadas.</h2>
-        <p>Estamos preparando la red de conductores y pasajeros para iniciar operaciones con una experiencia segura y profesional.</p>
-      </div>
-      <div class="city-grid reveal delay-1">
-        <span>Managua</span><span>Masaya</span><span>Granada</span><span>León</span><span>Chinandega</span><span>Más ciudades pronto</span>
-      </div>
-    </section>
-
-    <section class="download" id="descargar">
-      <div class="download-content reveal">
-        <p class="eyebrow"><span></span> App DriverX</p>
-        <h2>Muy pronto en App Store y Google Play.</h2>
-        <p>La experiencia DriverX está siendo preparada para pasajeros y conductores. Pronto podrás descargar la app y comenzar a moverte con confianza.</p>
+    <section class="section app-section" id="app">
+      <div class="app-card reveal">
+        <div>
+          <p class="eyebrow">Aplicación móvil</p>
+          <h2>Muy pronto en App Store y Google Play</h2>
+          <p>Estamos preparando la experiencia móvil para pasajeros y conductores.</p>
+        </div>
         <div class="store-buttons">
-          <a href="#" class="store disabled"> App Store <small>Muy pronto</small></a>
-          <a href="#" class="store disabled">▶ Google Play <small>Muy pronto</small></a>
+          <button type="button"> App Store<br><small>Disponible pronto</small></button>
+          <button type="button">▶ Google Play<br><small>Disponible pronto</small></button>
         </div>
       </div>
-      <div class="promo-card reveal delay-1">
-        <h3>DRIVER<span>X</span></h3>
-        <p>1% cashback en pagos con tarjeta</p>
-        <strong>Viaja más, ahorra más ✦</strong>
+    </section>
+
+    <section class="section partnerships" id="alianzas">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Alianzas</p>
+        <h2>Construyendo la próxima plataforma de movilidad regional</h2>
+        <p>Buscamos alianzas estratégicas con comercios, empresas, conductores y socios que compartan nuestra visión.</p>
+        <a class="btn btn-secondary" href="#contacto">Quiero asociarme</a>
       </div>
     </section>
 
-    <section class="section" id="alianzas">
+    <section class="section faq-section" id="faq">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Respuestas rápidas</h2>
+      </div>
+      <div class="faq-list reveal">
+        <button class="faq-item"><span>¿DriverX ya está disponible?</span><b>+</b><p>Estamos en etapa de preparación y lanzamiento progresivo en ciudades seleccionadas.</p></button>
+        <button class="faq-item"><span>¿Puedo trabajar con moto?</span><b>+</b><p>Sí. DriverX contempla viajes en moto y carro, siempre con documentos revisados y cuenta aprobada.</p></button>
+        <button class="faq-item"><span>¿Cómo se verifican los conductores?</span><b>+</b><p>El conductor sube sus documentos y el equipo DriverX realiza una revisión manual antes de aprobarlo.</p></button>
+        <button class="faq-item"><span>¿DriverX tendrá soporte?</span><b>+</b><p>Sí. La plataforma incluye canales de soporte para pasajeros, conductores y aliados.</p></button>
+        <button class="faq-item"><span>¿Qué métodos de pago aceptará?</span><b>+</b><p>La plataforma está preparada para evolucionar hacia pagos modernos, promociones y cashback.</p></button>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
       <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Alianzas</p>
-        <h2>Construyendo una plataforma de movilidad regional.</h2>
-        <p>DriverX está abierta a oportunidades comerciales, expansión, alianzas estratégicas y colaboración con negocios locales.</p>
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de DriverX</h2>
+        <p>Escríbenos si eres pasajero, conductor, aliado comercial o quieres conocer más sobre la plataforma.</p>
       </div>
-      <div class="cta-panel reveal delay-1">
-        <h3>¿Quieres asociarte con DriverX?</h3>
-        <p>Contáctanos para propuestas comerciales, soporte empresarial o expansión por ciudad.</p>
-        <a href="#soporte" class="btn btn-secondary">Contactar equipo</a>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Preguntas frecuentes</p>
-        <h2>Respuestas claras antes del lanzamiento.</h2>
-      </div>
-      <div class="faq-list reveal delay-1">
-        <details open>
-          <summary>¿Qué es DriverX?</summary>
-          <p>DriverX es una plataforma de movilidad que conecta pasajeros con conductores verificados para viajes en moto y carro.</p>
-        </details>
-        <details>
-          <summary>¿DriverX ya está disponible?</summary>
-          <p>La plataforma está en fase de preparación. La web, el panel y las apps están siendo desarrolladas para el lanzamiento.</p>
-        </details>
-        <details>
-          <summary>¿Cómo puedo ser conductor?</summary>
-          <p>Podrás registrarte, subir tus documentos y esperar la verificación manual del equipo DriverX.</p>
-        </details>
-        <details>
-          <summary>¿Se verifican los conductores?</summary>
-          <p>Sí. La activación de conductores requiere revisión de documentos y aprobación desde el panel administrativo.</p>
-        </details>
-        <details>
-          <summary>¿DriverX tendrá soporte?</summary>
-          <p>Sí. DriverX contempla soporte para pasajeros, conductores, documentos, viajes y consultas generales.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="section contact" id="soporte">
-      <div class="contact-info reveal">
-        <p class="eyebrow"><span></span> Contacto y soporte</p>
-        <h2>Hablemos de DriverX.</h2>
-        <p>Envíanos tu consulta si eres pasajero, conductor, socio comercial o necesitas soporte.</p>
-        <div class="contact-cards">
-          <div><b>Email</b><span>support@driverx.com</span></div>
-          <div><b>Horario</b><span>Soporte preparado 24/7</span></div>
-          <div><b>Consulta</b><span>Pasajeros, conductores y alianzas</span></div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Nombre completo" required />
+          <input type="email" name="email" placeholder="Correo electrónico" required />
         </div>
-      </div>
-      <form class="contact-form reveal delay-1" id="contactForm">
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <input type="tel" placeholder="Teléfono">
-        <select required>
-          <option value="">Tipo de consulta</option>
-          <option>Soy pasajero</option>
-          <option>Soy conductor</option>
-          <option>Quiero asociarme</option>
-          <option>Necesito soporte</option>
-        </select>
-        <textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
-        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Teléfono / WhatsApp" />
+          <select name="type" required>
+            <option value="">Tipo de consulta</option>
+            <option>Soy pasajero</option>
+            <option>Soy conductor</option>
+            <option>Quiero asociarme</option>
+            <option>Necesito soporte</option>
+          </select>
+        </div>
+        <textarea name="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        <p class="form-note" id="formNote">Este formulario está listo visualmente. Luego podemos conectarlo al backend o a un correo.</p>
       </form>
     </section>
   </main>
 
-  <footer class="footer" id="legal">
-    <div class="brand"><span>DRIVER</span><strong>X</strong></div>
-    <p>Movilidad rápida, segura y accesible. Plataforma en preparación para lanzamiento.</p>
+  <footer class="footer">
+    <div class="footer-brand">
+      <a class="brand" href="#inicio"><span class="brand-mark">DX</span><span>Driver<span>X</span></span></a>
+      <p>Movilidad rápida, segura y accesible.</p>
+    </div>
     <div class="footer-links">
       <a href="#empresa">Nosotros</a>
       <a href="#seguridad">Seguridad</a>
       <a href="#conductores">Conductores</a>
-      <a href="#soporte">Soporte</a>
-      <a href="#legal">Términos</a>
-      <a href="#legal">Privacidad</a>
-      <a href="#legal">Cancelaciones</a>
+      <a href="#contacto">Soporte</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
     </div>
-    <small>© 2026 DriverX. Todos los derechos reservados.</small>
+    <p class="copyright">© <span id="year"></span> DriverX. Todos los derechos reservados.</p>
   </footer>
 
-  <a class="whatsapp-float" href="#soporte" aria-label="Hablar con DriverX">💬 Hablar con DriverX</a>
-
-  <script src="./script.js"></script>
+  <a class="floating-whatsapp" href="#contacto" aria-label="Hablar con DriverX">💬 <span>Hablar con DriverX</span></a>
+  <script src="script.js"></script>
 </body>
 </html>
