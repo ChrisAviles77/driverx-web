@@ -318,7 +318,42 @@
     <p class="copyright">© <span id="year"></span> DriverX. Todos los derechos reservados.</p>
   </footer>
 
-  <a class="floating-whatsapp" href="#contacto" aria-label="Hablar con DriverX">💬 <span>Hablar con DriverX</span></a>
+  <button class="floating-whatsapp" id="chatLauncher" type="button" aria-label="Abrir asistente DriverX">💬 <span>Hablar con DriverX</span></button>
+
+  <section class="chatbot" id="chatbot" aria-label="Asistente virtual DriverX" aria-hidden="true">
+    <div class="chatbot-header">
+      <div class="chatbot-brand">
+        <span class="chatbot-mark">DX</span>
+        <div>
+          <strong>Asistente DriverX</strong>
+          <small>Información rápida sobre la plataforma</small>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatClose" type="button" aria-label="Cerrar asistente">×</button>
+    </div>
+
+    <div class="chatbot-body" id="chatMessages">
+      <div class="bot-message">
+        <span class="message-avatar">DX</span>
+        <p>Hola 👋 Soy el asistente de DriverX. Puedo ayudarte con información sobre viajes, conductores, seguridad, disponibilidad y soporte.</p>
+      </div>
+      <div class="quick-questions" id="quickQuestions">
+        <button type="button" data-question="¿Qué es DriverX?">¿Qué es DriverX?</button>
+        <button type="button" data-question="Quiero ser conductor">Quiero ser conductor</button>
+        <button type="button" data-question="¿Dónde estará disponible?">¿Dónde estará disponible?</button>
+        <button type="button" data-question="¿Qué documentos necesito?">Documentos</button>
+        <button type="button" data-question="¿DriverX es seguro?">Seguridad</button>
+        <button type="button" data-question="Quiero soporte">Soporte</button>
+      </div>
+    </div>
+
+    <form class="chatbot-input" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" />
+      <button type="submit" aria-label="Enviar pregunta">Enviar</button>
+    </form>
+    <p class="chatbot-disclaimer">Asistente informativo. En una siguiente fase puede conectarse a IA o WhatsApp.</p>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
